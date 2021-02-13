@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     overflow: hidden;
     background: white;
@@ -7,6 +7,7 @@ body{
 .sphere {
     fill: #2079cd;
 }
+
 .country {
     fill: #63d263;
     stroke: darkgreen;
@@ -17,5 +18,6 @@ body{
     fill: hotpink;
     stroke: deeppink;
     cursor: pointer;
+    stroke-opacity: 1;
 }
 
