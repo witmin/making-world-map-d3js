@@ -1,4 +1,4 @@
-import {select, json, geoPath, geoNaturalEarth1, zoom, event} from 'd3';
+import {select, json, geoPath, geoNaturalEarth1, zoom} from 'd3';
 import {feature} from 'topojson';
 
 const svg = select('svg');
@@ -12,9 +12,9 @@ g.append('path')
     .attr('class', 'sphere')
     .attr('d', pathGenerator({type: 'Sphere'}));
 
-svg.call(zoom().on('zoom', ()=>{
+svg.call(zoom().on('zoom', (event)=>{
     g.attr('transform', event.transform);
-})); // Doesn't really work on Chrome.
+}));
 
 json('./countries-110m.json')
     .then(data => {

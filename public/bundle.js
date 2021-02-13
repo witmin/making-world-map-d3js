@@ -5141,10 +5141,9 @@ g.append('path')
     .attr('class', 'sphere')
     .attr('d', pathGenerator({type: 'Sphere'}));
 
-svg.call(zoom().on('zoom', ()=>{
-    g.attr('transform', zoom.transform);
-    console.log(zoom.transform);
-})); // Doesn't really work on Chrome.
+svg.call(zoom().on('zoom', (event)=>{
+    g.attr('transform', event.transform);
+}));
 
 json('./countries-110m.json')
     .then(data => {
