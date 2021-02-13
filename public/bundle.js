@@ -5145,7 +5145,7 @@ svg.call(zoom().on('zoom', (event)=>{
     g.attr('transform', event.transform);
 }));
 
-json('./countries-110m.json')
+json('./countries-50m.json')
     .then(data => {
         const countries = feature(data, data.objects.countries);
 

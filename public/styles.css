@@ -11,7 +11,7 @@ body {
 .country {
     fill: #63d263;
     stroke: darkgreen;
-    stroke-opacity: 0.5;
+    stroke-opacity: 0.9;
 }
 
 .country:hover {
