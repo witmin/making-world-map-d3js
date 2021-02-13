@@ -12,3 +12,10 @@ body{
     stroke: darkgreen;
     stroke-opacity: 0.5;
 }
+
+.country:hover {
+    fill: hotpink;
+    stroke: deeppink;
+    cursor: pointer;
+}
+
