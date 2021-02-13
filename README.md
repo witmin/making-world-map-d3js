@@ -3,6 +3,9 @@ The video tutorial on FreeCodeCamp.org made by Curran Kelleher: https://www.yout
 
 This repository used [rollup.js](https://rollupjs.org/) as the JavaScript module bundler. 
 
+## Demo
+![World Map Screenshot](screenshot/basic-world-map.png)
+
 ## View the outcome
 Open `public/index.html` in modern browser such as Chrome or Firefox directly. 
 
